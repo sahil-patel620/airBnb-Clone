@@ -42,7 +42,7 @@ public class Booking {
     private  LocalDate checkOutDate;
 
     @CreationTimestamp
-    private LocalDateTime createdAt;
+    private LocalDateTime  createdAt;
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
