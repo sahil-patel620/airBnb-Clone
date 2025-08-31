@@ -21,6 +21,8 @@ public class Hotel {
     @Column(nullable = false)
     private String name;
 
+    private String city;
+
     @Column(columnDefinition = "TEXT[]")
     private String[] photos;
 
@@ -38,5 +40,8 @@ public class Hotel {
 
     @Column(nullable = false)
     private Boolean active;
+
+    @ManyToOne
+    private User owner;
 }
 
